@@ -14,10 +14,10 @@
     <title>sos-turtle</title>
   </head>
   <body>
-    <header class="hero-bg">
-      <nav class="navbar navbar-container">
+    <header>
+      <nav class="navbar navbar-container clearfix">
         <a class="navbar-logo" href="javascript:void(0)"
-          ><img src="img/logo.png" alt="logo" width="auto" height="35px"
+          ><img src="img/logo.png" alt="logo" width="195px" height="35px"
         /></a>
         <div class="navbar-item-holder">
           <a class="navbar-item-holder__navbar-item" href="javascriptvoid:(0)"
@@ -50,14 +50,14 @@
         </div>
       </nav>
     </header>
-    <section>
+    <section class="hero-bg">
       <div class="container">
         <div class="hero">
-          <div class="hero__greeting-underline">
-            <p class="hero__greeting">Welcome</p>
+          <div class="hero__greeting">
+            <p>Welcome</p>
           </div>
           <h1 class="hero__title">
-            Help Us Save <br />
+            <span class="hero__title-slpit">Help Us Save</span>
             A Billion Baby Turtles!
           </h1>
           <h2 class="hero__sub-title">
@@ -72,12 +72,16 @@
               <p>Donate to save baby turtles</p>
             </div>
             <div class="input-holder__input-selector">
-              <p class="">AMOUNT <i class="fas fa-sort-up"></i></p>
-              <h4>$20</h4>
+              <p class="input-selector__item-1">
+                AMOUNT <i class="fas fa-sort-up"></i>
+              </p>
+              <p class="input-selector__item-2">$20</p>
             </div>
             <div class="input-holder__input-selector">
-              <p class="">PERIOD <i class="fas fa-sort-up"></i></p>
-              <h4>Monthly</h4>
+              <p class="input-selector__item-1">
+                PERIOD <i class="fas fa-sort-up"></i>
+              </p>
+              <p class="input-selector__item-2">Monthly</p>
             </div>
             <div class="input-holder__input-submit">
               <button type="submit">DONATE</button>
@@ -88,59 +92,54 @@
     </section>
     <section class="container inner-container">
       <div class="card__holder clearfix">
-        <div class="card__picture card__picture-1">
+        <picture class="card__picture card__picture-1">
           <img
             src="img/cedric-frixon-463001-unsplash.png"
             alt="card__picture-1"
             width="auto"
             height="562px"
           />
-        </div>
+        </picture>
         <div class="card card-1">
-          <p class="card__name">projects</p>
+          <h4 class="card__name">projects</h4>
           <h2 class="card__title">SOS Turtle Conservations Tours</h2>
           <p class="card__desc">
             Unique opportunities to participate in wildlife conservation
             programs. Check out our hands-on tours to Costa Rica, Cuba, Mexico,
             and more.
           </p>
-          <p class="card__navigation">
+          <a href="javascript:void(0)" class="card__navigation">
             upcoming turtle tours
-            <a
-              href="javascript:void(0)"
-              class="fas fa-arrow-right card__navigation-icon"
-            >
-            </a>
-          </p>
+            <span class="fas fa-arrow-right card__navigation-icon"> </span>
+          </a>
         </div>
       </div>
       <div class="card__holder clearfix">
         <div class="card card-2">
-          <p class="card__name">Programs</p>
+          <h4 class="card__name">Programs</h4>
           <h2 class="card__title">school and educational Programs</h2>
           <p class="card__desc">
             Helping students learn about and experience turtle conservation. We
             have Lesson plans, field trips, presentations, and fundraisers.
           </p>
-          <p class="card__navigation">
-            School Programs<a
-              href="javascript:void(0)"
-              class="fas fa-arrow-right card__navigation-icon"
-            ></a>
-          </p>
+
+          <a href="javascript:void(0)" class="card__navigation">
+            School Programs
+            <span class="fas fa-arrow-right card__navigation-icon"> </span>
+          </a>
         </div>
-        <div class="card__picture card__picture-2">
+        <picture class="card__picture card__picture-2">
           <img
             src="img/cedric-frixon-2463001-unsplash.png"
             alt="card__picture-2"
             width="auto"
             height="562px"
           />
-        </div>
+        </picture>
       </div>
     </section>
     <section class="container inner-container">
-      <div class="item-holder">
+      <div class="item-holder clearfix">
         <div class="card-item">
           <div class="card__content">
             <h2 class="card__title">BILLION BABY TURTLES</h2>
@@ -151,32 +150,38 @@
           </div>
           <div class="card__sub-content">
             <div>
-              <h3>09</h3>
-              <p>grants to conservation organizations</p>
+              <p class="card__sub-content__num">09</p>
+              <p class="card__sub-content__text">
+                grants to conservation organizations
+              </p>
             </div>
             <div>
-              <h3>10</h3>
-              <p>turtle nesting beaches supported</p>
+              <p class="card__sub-content__num">10</p>
+              <p class="card__sub-content__text">
+                turtle nesting beaches supported
+              </p>
             </div>
             <div>
-              <h3>05</h3>
-              <p>species of sea turtles protected</p>
+              <p class="card__sub-content__num">05</p>
+              <p class="card__sub-content__text">
+                species of sea turtles protected
+              </p>
             </div>
           </div>
         </div>
-        <div class="card-item__left clearfix">
+        <div class="card-item__left">
           <div>
-            <h3>407k</h3>
-            <p>hatchlings saved</p>
+            <p class="card-item__left-num">407k</p>
+            <p class="card-item__left-text">hatchlings saved</p>
           </div>
         </div>
       </div>
     </section>
     <section class="container inner-container">
-      <div class="slider">
-        <div class="slide-1__picture">
+      <div class="slider clearfix">
+        <picture class="slide-1__picture">
           <img src="img/ishan-seefromthesky-201155-unsplash.png" alt="card-3" />
-        </div>
+        </picture>
         <div class="slider-content">
           <h4 class="card__name">PROGRAMS</h4>
           <h2 class="card__title">SOS TURTLE CONSERVATION TRIPS</h2>
@@ -197,50 +202,51 @@
     </section>
     <section class="container inner-container">
       <h2 class="last-card__heading">LATEST NEWS</h2>
-      <div class="last-card last-card__left">
-        <h4 class="last-card__name">CAMPAIGN</h4>
-        <h3 class="last-card__title">Milman Islet Research</h3>
-        <p class="last_card__sub-title">On June 19, 2021 / By Turtle Save</p>
-        <div class="last-card__picture">
-          <img
-            src="img/last-card.png"
-            alt="last-card"
-            width="auto"
-            height="215px"
-          />
+      <div class="clearfix">
+        <div class="last-card last-card__left">
+          <h4 class="last-card__name">CAMPAIGN</h4>
+          <h3 class="last-card__title">Milman Islet Research</h3>
+          <p class="last_card__sub-title">On June 19, 2021 / By Turtle Save</p>
+          <picture class="last-card__picture">
+            <img
+              src="img/last-card.png"
+              alt="last-card"
+              width="auto"
+              height="215px"
+            />
+          </picture>
+          <p class="last-card__desc">
+            Researchers have been monitoring nesting turtle populations on
+            Milman Islet for over 25 years. It is a small sandy cay within the
+            Denham groups of Islands in the northern Great…
+          </p>
+          <a class="last-card__link" href="javascript:void(0)"
+            >continue reading</a
+          >
         </div>
-        <p class="last-card__desc">
-          Researchers have been monitoring nesting turtle populations on Milman
-          Islet for over 25 years. It is a small sandy cay within the Denham
-          groups of Islands in the northern Great…
-        </p>
-        <a class="last-card__link" href="javascript:void(0)"
-          >continue reading</a
-        >
-      </div>
 
-      <div class="last-card last-card__right clearfix">
-        <h4 class="last-card__name">VOLUNTARY POSITIONS</h4>
-        <h3 class="last-card__title">Project Assistant Volunteer</h3>
-        <p class="last_card__sub-title">On June 19, 2021 / By Turtle Save</p>
-        <div class="last-card__picture">
-          <img
-            src="img/last-cart-2.png"
-            alt="last-card"
-            width="auto"
-            height="215px"
-          />
+        <div class="last-card last-card__right">
+          <h4 class="last-card__name">VOLUNTARY POSITIONS</h4>
+          <h3 class="last-card__title">Project Assistant Volunteer</h3>
+          <p class="last_card__sub-title">On June 19, 2021 / By Turtle Save</p>
+          <picture class="last-card__picture">
+            <img
+              src="img/last-cart-2.png"
+              alt="last-card"
+              width="auto"
+              height="215px"
+            />
+          </picture>
+          <p class="last-card__desc">
+            We are now looking for a Project Assistant to undertake research,
+            prepare information (including written communications and
+            documentation) and provide fundraising, program…
+          </p>
+          <a class="last-card__link" href="javascript:void(0)"
+            >continue reading</a
+          >
         </div>
-        <p class="last-card__desc">
-          We are now looking for a Project Assistant to undertake research,
-          prepare information (including written communications and
-          documentation) and provide fundraising, program…
-        </p>
-        <a class="last-card__link" href="javascript:void(0)"
-          >continue reading</a
-        >
       </div>
-
       <div class="last-card__btn">
         <button type="button">MORE NEWS</button>
       </div>

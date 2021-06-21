@@ -34,7 +34,8 @@ a {
   background: url(img/wapper-bg.png);
   height: 100vh;
   background-size: cover;
-  background-blend-mode: multiply;
+  background-position: center;
+  /* background-blend-mode: multiply; */
 }
 .navbar-container {
   max-width: 1818px;
@@ -45,6 +46,7 @@ a {
   text-align: center;
   width: 100%;
   padding: 38px 10px;
+  float: left;
 }
 .navbar-logo {
   max-height: 35px;
@@ -63,6 +65,8 @@ a {
 }
 .navbar-icon-holder {
   float: right;
+  width: 195px;
+  text-align: right;
 }
 .navbar-icon-holder__navbar-icon {
   color: #ffffff;
@@ -76,20 +80,23 @@ a {
   top: 25%;
   color: #ffffff;
 }
-.hero__greeting-underline {
-  padding-bottom: 7px;
+.hero__greeting {
   border-bottom: 1px solid #ffffff;
   display: inline-block;
   margin-bottom: 44px;
 }
-.hero__greeting {
+.hero__greeting > p {
   font-size: 22px;
   font-weight: 500;
+  padding-bottom: 7px;
 }
 .hero__title {
   font-size: 80px;
   line-height: 1.15;
   margin-bottom: 41px;
+}
+.hero__title-slpit {
+  display: block;
 }
 .hero__sub-title--play {
   color: #ffffff;
@@ -123,16 +130,16 @@ a {
 .input-holder__input-selector {
   padding: 21px 90px 32px 89px;
 }
-.input-holder__input-selector > p {
+.input-selector__item-1 {
   font-size: 14px;
   line-height: 2.21;
   color: #9aa8b6;
 }
-.input-holder__input-selector > p > i {
+.input-selector__item-1 > i {
   float: right;
   padding: 10px;
 }
-.input-holder__input-selector > h4 {
+.input-selector__item-2 {
   font-size: 22px;
   font-weight: 500;
   line-height: 1.41;
@@ -172,7 +179,6 @@ a {
 .card__name {
   margin: 21px 0 55px;
   font-size: 14px;
-  font-weight: bold;
   color: #3e4c5b;
   text-transform: uppercase;
 }
@@ -189,6 +195,7 @@ a {
   color: #9aa8b6;
 }
 .card__navigation {
+  display: inline-block;
   margin-top: 38px;
   font-size: 14px;
   font-weight: bold;
@@ -228,12 +235,12 @@ a {
   width: 235px;
   font-size: 0;
 }
-.card__sub-content > div > h3 {
+.card__sub-content__num {
   font-size: 80px;
   font-weight: 300;
   color: #23cf5f;
 }
-.card__sub-content > div > p {
+.card__sub-content__text {
   margin-top: 7px;
   text-transform: uppercase;
   font-size: 14px;
@@ -242,6 +249,7 @@ a {
 }
 .card__sub-content {
   font-size: 0;
+  margin-top: 50px;
 }
 .card-item {
   display: inline-block;
@@ -255,18 +263,20 @@ a {
   float: right;
 }
 .card-item__left > div {
-  transform: translate(25%, 80%);
+  padding: 105px 0;
 }
-.card-item__left > div > h3 {
+.card-item__left-num {
+  text-align: center;
   font-size: 80px;
   font-weight: 300;
   color: #23cf5f;
 }
-.card-item__left > div > p {
+.card-item__left-text {
   font-size: 22px;
   font-weight: bold;
   color: #3e4c5b;
   width: 200px;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 .slider {
@@ -326,6 +336,7 @@ a {
   max-width: 470px;
   max-height: 215px;
   margin-bottom: 54px;
+  display: inline-block;
 }
 .last-card__desc {
   font-size: 22px;
