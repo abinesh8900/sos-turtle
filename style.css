@@ -22,20 +22,16 @@ a {
 .inner-container {
   padding: 0 55px;
 }
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .hero-bg {
-  /* background: linear-gradient(
-      351deg,
-      rgba(255, 255, 255, 0) 287%,
-      rgba(24, 151, 196, 0) 37%,
-      rgba(13, 146, 193, 0.95) -1%,
-      rgb(0, 140, 190) -1%
-    ),
-    url(img/wapper-bg.png); */
   background: url(img/wapper-bg.png);
   height: 100vh;
   background-size: cover;
   background-position: center;
-  /* background-blend-mode: multiply; */
 }
 .navbar-container {
   max-width: 1818px;
@@ -45,12 +41,15 @@ a {
 .navbar {
   text-align: center;
   width: 100%;
-  padding: 38px 10px;
-  float: left;
+  padding: 38px 0;
+  position: relative;
+  z-index: 5;
 }
 .navbar-logo {
   max-height: 35px;
   float: left;
+  position: absolute;
+  left: 0;
 }
 
 .navbar-item-holder,
@@ -65,8 +64,8 @@ a {
 }
 .navbar-icon-holder {
   float: right;
-  width: 195px;
-  text-align: right;
+  position: absolute;
+  right: 0;
 }
 .navbar-icon-holder__navbar-icon {
   color: #ffffff;
@@ -322,7 +321,6 @@ a {
 }
 .last-card__title {
   font-size: 50px;
-  list-style: 1.02;
   color: #3e4c5b;
   margin-bottom: 26px;
 }
@@ -361,6 +359,7 @@ a {
   background-color: #23cf5f;
   color: #ffffff;
   border-radius: 4px;
+  cursor: pointer;
 }
 .last-card__right {
   float: right;
@@ -407,6 +406,7 @@ a {
   border: 0;
   border-radius: 4px;
   margin: 5px;
+  cursor: pointer;
 }
 .footer-container {
   padding: 114px 100px 76px 100px;
